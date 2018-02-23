@@ -109,6 +109,10 @@ android {
             }
         }
 
+        androidTestfocusWebviewCompile {
+            java.srcDirs += ['src/androidTestFocusWebview/java']
+        }
+
         focusWebviewRelease {
             java.srcDir 'src/focusRelease/java'
             manifest.srcFile 'src/focusRelease/AndroidManifest.xml'
